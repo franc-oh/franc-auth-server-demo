@@ -22,7 +22,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group 'com.franc.app'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '1.8'
 
 configurations {
     developmentOnly
@@ -51,8 +51,8 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation "org.junit.jupiter:junit-jupiter:$junitVersion"
 
-    compileOnly 'org.springframework.boot:spring-boot-devtools'
     compileOnly "org.projectlombok:lombok:$lombokVersion"
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
     annotationProcessor "org.projectlombok:lombok:$lombokVersion"
 
